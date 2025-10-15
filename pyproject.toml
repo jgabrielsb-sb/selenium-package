@@ -1,0 +1,13 @@
+[project]
+name = 'selenium-package'
+version = '0.1.0'
+description = 'Selenium package'
+authors = ['João Gabriel Sampaio de Barros <jgabrielsb2002@gmail.com>']
+dependencies = [
+    "selenium>=4.25.0",
+    "pytest>=7.4.0",
+]
+
+# [tool.pytest.ini_options]
+# addopts = "--cov=src --cov-report=html"
+# pythonpath = "src"
