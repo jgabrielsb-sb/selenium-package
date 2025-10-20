@@ -1,11 +1,7 @@
-from ast import excepthandler
-from interfaces.selenium import (
-    BaseAction,
-)
-
 from abc import ABC, abstractmethod
 
-from core.messages import *
+from .base_action import BaseAction
+from ..messages import *
 
 from typing import Any
 

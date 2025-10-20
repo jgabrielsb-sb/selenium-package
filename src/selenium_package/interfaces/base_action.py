@@ -11,9 +11,9 @@ from selenium.webdriver.remote.webelement import WebElement
 
 from abc import ABC, abstractmethod
 
-from core.exceptions.selenium_exceptions import SeleniumBaseActionException
+from .exceptions.exceptions import SeleniumBaseActionException
 
-from core.messages import *
+from selenium_package.messages import *
 
 class BaseAction(ABC):
     def __init__(
@@ -58,7 +58,7 @@ class BaseAction(ABC):
             raise SeleniumBaseActionException(
                 message=BASE_ACTION_FAILED_MESSAGE.format(
                     action_name=self.__class__.__name__,
-                    error=e.msg # e.msg to remove the stacktrace
+                    error=str(e) # str(e) to get the error message
                 )
             )
 

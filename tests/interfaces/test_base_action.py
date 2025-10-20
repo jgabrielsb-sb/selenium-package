@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.webdriver import WebDriver
 
 from selenium.webdriver.remote.webelement import WebElement
 
-from src.interfaces import (
+from selenium_package.interfaces import (
     BaseAction,
     SeleniumBaseActionException
 )

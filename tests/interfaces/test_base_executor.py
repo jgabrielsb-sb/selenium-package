@@ -7,18 +7,15 @@ from unittest.mock import (
 
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from interfaces.selenium.base_executor import BaseExecutor
-
-from core.exceptions import (
+from selenium_package.interfaces.base_executor import BaseExecutor
+from selenium_package.interfaces.base_action import BaseAction
+from selenium_package.interfaces.exceptions.exceptions import (
     SeleniumBaseActionException, 
     MaximumAttemptsReachedException
 )
-
-from interfaces.selenium.base_action import BaseAction
+from selenium_package.messages import *
 
 from typing import Any
-
-from core.messages import *
 
 @pytest.fixture
 def mock_webdriver():
