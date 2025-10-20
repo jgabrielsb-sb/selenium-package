@@ -7,7 +7,7 @@ from selenium_package.interfaces import BaseAction
 
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from selenium_package.messages import *
+from selenium_package.utils.messages import *
 
 class GoToTabThatContainsUrl(BaseAction):
     def __init__(

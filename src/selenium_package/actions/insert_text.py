@@ -5,7 +5,7 @@ It will insert the text passed to the constructor into the element passed to the
 
 from selenium_package.interfaces import BaseAction
 
-from selenium_package.messages import *
+from selenium_package.utils.messages import *
 
 from selenium.webdriver.chrome.webdriver import WebDriver
 

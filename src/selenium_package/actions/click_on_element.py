@@ -9,7 +9,7 @@ from selenium.webdriver.remote.webdriver import WebDriver
 
 from selenium.webdriver.remote.webelement import WebElement
 
-from selenium_package.messages import *
+from selenium_package.utils.messages import *
 
 class ClickOnElement(BaseAction):
     def __init__(self, 

@@ -8,7 +8,7 @@ from selenium.webdriver.remote.webelement import WebElement
 
 from selenium_package.actions import ClickOnElement
 
-from selenium_package.messages import *
+from selenium_package.utils.messages import *
 
 
 @pytest.fixture

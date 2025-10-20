@@ -6,7 +6,7 @@ from selenium.webdriver.remote.webdriver import WebDriver
 
 from unittest.mock import MagicMock
 
-from selenium_package.messages import *
+from selenium_package.utils.messages import *
 
 @pytest.fixture
 def mock_webdriver():

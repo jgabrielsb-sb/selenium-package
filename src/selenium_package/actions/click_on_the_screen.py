@@ -8,7 +8,7 @@ from selenium_package.interfaces import BaseAction
 
 from selenium.webdriver.common.action_chains import ActionChains
 
-from selenium_package.messages import *
+from selenium_package.utils.messages import *
 
 class ClickOnTheScreen(BaseAction):
     def __init__(
