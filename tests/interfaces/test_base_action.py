@@ -12,6 +12,7 @@ from selenium_package.interfaces import (
     SeleniumBaseActionException
 )
 
+from selenium_package.messages import *
 
 class TestBaseAction:
 
