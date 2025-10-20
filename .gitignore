@@ -18,3 +18,8 @@ __pycache__
 venv
 dist
 venv
+
+venv/
+
+
+
