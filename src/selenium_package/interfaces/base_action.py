@@ -13,7 +13,7 @@ from abc import ABC, abstractmethod
 
 from .exceptions.exceptions import SeleniumBaseActionException
 
-from selenium_package.messages import *
+from selenium_package.utils.messages import *
 
 class BaseAction(ABC):
     def __init__(

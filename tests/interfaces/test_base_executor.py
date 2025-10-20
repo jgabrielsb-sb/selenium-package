@@ -13,7 +13,7 @@ from selenium_package.interfaces.exceptions.exceptions import (
     SeleniumBaseActionException, 
     MaximumAttemptsReachedException
 )
-from selenium_package.messages import *
+from selenium_package.utils.messages import *
 
 from typing import Any
 

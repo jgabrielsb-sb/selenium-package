@@ -5,7 +5,7 @@ You can extend this class perform some action until a certain condition is met.
 
 from abc import ABC, abstractmethod
 from .base_action import BaseAction
-from ..messages import *
+from selenium_package.utils.messages import *
 
 from typing import Any
 
