@@ -9,6 +9,9 @@ from selenium.webdriver.remote.webdriver import WebDriver
 from selenium_package.utils.messages import *
 
 class CloseAllTabsExceptThatHasTitle(BaseAction):
+    """
+    Action that closes all tabs except the one that has the exact same title passed to the constructor.
+    """
     def __init__(
         self,
         web_instance: WebDriver,

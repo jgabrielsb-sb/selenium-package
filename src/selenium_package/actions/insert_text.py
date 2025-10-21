@@ -12,6 +12,9 @@ from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.remote.webelement import WebElement
 
 class InsertText(BaseAction):
+    """
+    Action that inserts the text passed to the constructor into the element passed to the constructor.
+    """
     def __init__(
         self, 
         web_instance: WebDriver, 

@@ -9,6 +9,9 @@ from selenium.webdriver.remote.webdriver import WebDriver
 
 
 class GoBackToThePreviousPage(BaseAction):
+    """
+    Action that goes back to the previous page.
+    """
     def __init__(
         self,
         web_instance: WebDriver,

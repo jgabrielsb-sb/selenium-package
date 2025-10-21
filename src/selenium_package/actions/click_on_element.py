@@ -12,6 +12,9 @@ from selenium.webdriver.remote.webelement import WebElement
 from selenium_package.utils.messages import *
 
 class ClickOnElement(BaseAction):
+    """
+    Action that clicks on the element passed to the constructor.
+    """
     def __init__(self, 
         web_instance: WebDriver | WebElement, 
         web_element: WebElement,

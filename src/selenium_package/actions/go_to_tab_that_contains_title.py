@@ -9,6 +9,9 @@ from selenium.webdriver.remote.webdriver import WebDriver
 from selenium_package.utils.messages import *
 
 class GoToTabThatContainsTitle(BaseAction):
+    """
+    Action that goes to the tab that contains the title passed to the constructor.
+    """
     def __init__(
         self,
         web_instance: WebDriver,

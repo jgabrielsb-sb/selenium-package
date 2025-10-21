@@ -11,6 +11,9 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium_package.utils.messages import *
 
 class ClickOnTheScreen(BaseAction):
+    """
+    Action that clicks on the screen at the point passed to the constructor.
+    """
     def __init__(
         self, 
         web_instance: WebDriver, 

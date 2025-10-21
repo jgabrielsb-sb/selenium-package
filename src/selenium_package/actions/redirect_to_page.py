@@ -9,6 +9,9 @@ from selenium.webdriver.remote.webdriver import WebDriver
 from selenium_package.utils.messages import *
 
 class RedirectToPage(BaseAction):
+    """
+    Action that redirects the webdriver to the page passed to the constructor.
+    """
     def __init__(self, 
         web_instance: WebDriver, 
         page_url: str,
