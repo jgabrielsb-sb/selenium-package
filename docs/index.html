@@ -270,8 +270,73 @@ documentation for details.</p>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="pre-built-objects.html">Pre-built Objects</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="pre-built-objects.html#actions">Actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pre-built-objects.html#executors">Executors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pre-built-objects.html#actions">Actions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pre-built-objects.html#click-actions">Click Actions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.actions.click_on_element.ClickOnElement"><code class="docutils literal notranslate"><span class="pre">ClickOnElement</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.actions.click_on_the_screen.ClickOnTheScreen"><code class="docutils literal notranslate"><span class="pre">ClickOnTheScreen</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pre-built-objects.html#text-input-actions">Text Input Actions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.actions.insert_text.InsertText"><code class="docutils literal notranslate"><span class="pre">InsertText</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pre-built-objects.html#navigation-actions">Navigation Actions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.actions.redirect_to_page.RedirectToPage"><code class="docutils literal notranslate"><span class="pre">RedirectToPage</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.actions.go_back_to_the_previous_page.GoBackToThePreviousPage"><code class="docutils literal notranslate"><span class="pre">GoBackToThePreviousPage</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pre-built-objects.html#tab-management-actions">Tab Management Actions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.actions.go_to_tab_that_has_title.GoToTabThatHasTitle"><code class="docutils literal notranslate"><span class="pre">GoToTabThatHasTitle</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.actions.go_to_tab_that_contains_title.GoToTabThatContainsTitle"><code class="docutils literal notranslate"><span class="pre">GoToTabThatContainsTitle</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.actions.go_to_tab_that_contains_url.GoToTabThatContainsUrl"><code class="docutils literal notranslate"><span class="pre">GoToTabThatContainsUrl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.actions.close_all_tabs_except_that_has_title.CloseAllTabsExceptThatHasTitle"><code class="docutils literal notranslate"><span class="pre">CloseAllTabsExceptThatHasTitle</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.actions.close_all_tabs_except_that_contains_title.CloseAllTabsExceptThatContainsTitle"><code class="docutils literal notranslate"><span class="pre">CloseAllTabsExceptThatContainsTitle</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pre-built-objects.html#executors">Executors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pre-built-objects.html#basic-executors">Basic Executors</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.executors.default_executor.DefaultExecutor"><code class="docutils literal notranslate"><span class="pre">DefaultExecutor</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.executors.timeout_executor.TimeoutExecutor"><code class="docutils literal notranslate"><span class="pre">TimeoutExecutor</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.executors.retry_executor.RetryExecutor"><code class="docutils literal notranslate"><span class="pre">RetryExecutor</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pre-built-objects.html#retry-executors">Retry Executors</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.executors.retry_action_by_max_attempts.RetryActionByMaxAttempts"><code class="docutils literal notranslate"><span class="pre">RetryActionByMaxAttempts</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="pre-built-objects.html#selenium_package.executors.retry_action_by_max_attempts.RetryActionByMaxAttempts.run"><code class="docutils literal notranslate"><span class="pre">RetryActionByMaxAttempts.run()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pre-built-objects.html#element-based-retry-executors">Element-based Retry Executors</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.executors.retry_action_until_element_is_located.RetryActionUntilElementIsLocated"><code class="docutils literal notranslate"><span class="pre">RetryActionUntilElementIsLocated</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.executors.retry_action_until_element_has_a_property_value.RetryActionUntilElementHasAPropertyValue"><code class="docutils literal notranslate"><span class="pre">RetryActionUntilElementHasAPropertyValue</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.executors.retry_action_until_element_contains_a_property_value.RetryActionUntilElementContainsAPropertyValue"><code class="docutils literal notranslate"><span class="pre">RetryActionUntilElementContainsAPropertyValue</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pre-built-objects.html#page-based-retry-executors">Page-based Retry Executors</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.executors.retry_action_until_page_title_is.RetryActionUntilPageTitleIs"><code class="docutils literal notranslate"><span class="pre">RetryActionUntilPageTitleIs</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.executors.retry_action_until_page_title_contains.RetryActionUntilPageTitleContains"><code class="docutils literal notranslate"><span class="pre">RetryActionUntilPageTitleContains</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.executors.retry_action_until_url_contains.RetryActionUntilUrlContains"><code class="docutils literal notranslate"><span class="pre">RetryActionUntilUrlContains</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pre-built-objects.html#tab-based-retry-executors">Tab-based Retry Executors</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.executors.retry_action_until_another_tab_is_opened.RetryActionUntilAnotherTabIsOpened"><code class="docutils literal notranslate"><span class="pre">RetryActionUntilAnotherTabIsOpened</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.executors.retry_action_until_number_of_tabs_is.RetryActionUntilNumberOfTabsIs"><code class="docutils literal notranslate"><span class="pre">RetryActionUntilNumberOfTabsIs</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pre-built-objects.html#file-based-retry-executors">File-based Retry Executors</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.executors.retry_action_until_new_file_has_been_detected.RetryActionUntilNewFileHasBeenDetected"><code class="docutils literal notranslate"><span class="pre">RetryActionUntilNewFileHasBeenDetected</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pre-built-objects.html#text-input-retry-executors">Text Input Retry Executors</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pre-built-objects.html#selenium_package.executors.retry_insert_text_until_value_is_correct.RetryInsertTextUntilValueIsCorrect"><code class="docutils literal notranslate"><span class="pre">RetryInsertTextUntilValueIsCorrect</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pre-built-objects.html#usage-examples">Usage Examples</a></li>
 </ul>
 </li>
 </ul>

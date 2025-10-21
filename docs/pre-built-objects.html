@@ -234,11 +234,310 @@
         <article role="main" id="furo-main-content">
           <section id="pre-built-objects">
 <h1>Pre-built Objects<a class="headerlink" href="#pre-built-objects" title="Link to this heading">¶</a></h1>
+<p>This section documents all the pre-built actions and executors available in the selenium package. These ready-to-use classes provide common functionality for web automation tasks.</p>
 <section id="actions">
 <h2>Actions<a class="headerlink" href="#actions" title="Link to this heading">¶</a></h2>
+<p>Actions are concrete implementations of the <cite>BaseAction</cite> interface that perform specific operations on web elements or the browser.</p>
+<section id="click-actions">
+<h3>Click Actions<a class="headerlink" href="#click-actions" title="Link to this heading">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.actions.click_on_element.ClickOnElement">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.actions.click_on_element.</span></span><span class="sig-name descname"><span class="pre">ClickOnElement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">web_instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">WebDriver</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">WebElement</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">web_element</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">WebElement</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.actions.click_on_element.ClickOnElement" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseAction</span></code></a></p>
+<p>Action that clicks on the element passed to the constructor.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.actions.click_on_the_screen.ClickOnTheScreen">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.actions.click_on_the_screen.</span></span><span class="sig-name descname"><span class="pre">ClickOnTheScreen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">web_instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">WebDriver</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_coordinate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_coordinate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.actions.click_on_the_screen.ClickOnTheScreen" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseAction</span></code></a></p>
+<p>Action that clicks on the screen at the point passed to the constructor.</p>
+</dd></dl>
+
+</section>
+<section id="text-input-actions">
+<h3>Text Input Actions<a class="headerlink" href="#text-input-actions" title="Link to this heading">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.actions.insert_text.InsertText">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.actions.insert_text.</span></span><span class="sig-name descname"><span class="pre">InsertText</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">web_instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">WebDriver</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">web_element</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">WebElement</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">using_js</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.actions.insert_text.InsertText" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseAction</span></code></a></p>
+<p>Action that inserts the text passed to the constructor into the element passed to the constructor.</p>
+</dd></dl>
+
+</section>
+<section id="navigation-actions">
+<h3>Navigation Actions<a class="headerlink" href="#navigation-actions" title="Link to this heading">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.actions.redirect_to_page.RedirectToPage">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.actions.redirect_to_page.</span></span><span class="sig-name descname"><span class="pre">RedirectToPage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">web_instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">WebDriver</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page_url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.actions.redirect_to_page.RedirectToPage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseAction</span></code></a></p>
+<p>Action that redirects the webdriver to the page passed to the constructor.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.actions.go_back_to_the_previous_page.GoBackToThePreviousPage">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.actions.go_back_to_the_previous_page.</span></span><span class="sig-name descname"><span class="pre">GoBackToThePreviousPage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">web_instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">WebDriver</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.actions.go_back_to_the_previous_page.GoBackToThePreviousPage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseAction</span></code></a></p>
+<p>Action that goes back to the previous page.</p>
+</dd></dl>
+
+</section>
+<section id="tab-management-actions">
+<h3>Tab Management Actions<a class="headerlink" href="#tab-management-actions" title="Link to this heading">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.actions.go_to_tab_that_has_title.GoToTabThatHasTitle">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.actions.go_to_tab_that_has_title.</span></span><span class="sig-name descname"><span class="pre">GoToTabThatHasTitle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">web_instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">WebDriver</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">desired_tab_title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.actions.go_to_tab_that_has_title.GoToTabThatHasTitle" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseAction</span></code></a></p>
+<p>Action that goes to the tab that has the exact same title passed to the constructor.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.actions.go_to_tab_that_contains_title.GoToTabThatContainsTitle">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.actions.go_to_tab_that_contains_title.</span></span><span class="sig-name descname"><span class="pre">GoToTabThatContainsTitle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">web_instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">WebDriver</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">desired_tab_title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.actions.go_to_tab_that_contains_title.GoToTabThatContainsTitle" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseAction</span></code></a></p>
+<p>Action that goes to the tab that contains the title passed to the constructor.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.actions.go_to_tab_that_contains_url.GoToTabThatContainsUrl">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.actions.go_to_tab_that_contains_url.</span></span><span class="sig-name descname"><span class="pre">GoToTabThatContainsUrl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">web_instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">WebDriver</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">desired_url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.actions.go_to_tab_that_contains_url.GoToTabThatContainsUrl" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseAction</span></code></a></p>
+<p>Action that goes to the tab that contains the url passed to the constructor.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.actions.close_all_tabs_except_that_has_title.CloseAllTabsExceptThatHasTitle">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.actions.close_all_tabs_except_that_has_title.</span></span><span class="sig-name descname"><span class="pre">CloseAllTabsExceptThatHasTitle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">web_instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">WebDriver</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">desired_tab_title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.actions.close_all_tabs_except_that_has_title.CloseAllTabsExceptThatHasTitle" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseAction</span></code></a></p>
+<p>Action that closes all tabs except the one that has the exact same title passed to the constructor.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.actions.close_all_tabs_except_that_contains_title.CloseAllTabsExceptThatContainsTitle">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.actions.close_all_tabs_except_that_contains_title.</span></span><span class="sig-name descname"><span class="pre">CloseAllTabsExceptThatContainsTitle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">web_instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">WebDriver</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">desired_tab_title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.actions.close_all_tabs_except_that_contains_title.CloseAllTabsExceptThatContainsTitle" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseAction</span></code></a></p>
+<p>Action that closes all tabs except the one that contains the title passed to the constructor.</p>
+</dd></dl>
+
+</section>
 </section>
 <section id="executors">
 <h2>Executors<a class="headerlink" href="#executors" title="Link to this heading">¶</a></h2>
+<p>Executors are concrete implementations of the <cite>BaseExecutor</cite> interface that control how actions are executed, including retry logic and conditional execution.</p>
+<section id="basic-executors">
+<h3>Basic Executors<a class="headerlink" href="#basic-executors" title="Link to this heading">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.executors.default_executor.DefaultExecutor">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.executors.default_executor.</span></span><span class="sig-name descname"><span class="pre">DefaultExecutor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><span class="pre">BaseAction</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">web_element</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">WebElement</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait_to_verify_condition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">30</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.executors.default_executor.DefaultExecutor" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_executor.BaseExecutor" title="selenium_package.interfaces.base_executor.BaseExecutor"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseExecutor</span></code></a></p>
+<p>Default executor that runs an action once and stops.</p>
+<p>This is the simplest executor implementation that executes the action
+once and immediately considers the condition to stop as met.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.executors.timeout_executor.TimeoutExecutor">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.executors.timeout_executor.</span></span><span class="sig-name descname"><span class="pre">TimeoutExecutor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><span class="pre">BaseAction</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">web_element</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">WebElement</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait_to_verify_condition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">30</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.executors.timeout_executor.TimeoutExecutor" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_executor.BaseExecutor" title="selenium_package.interfaces.base_executor.BaseExecutor"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseExecutor</span></code></a></p>
+<p>Executor that runs an action with a specific timeout.</p>
+<p>This executor will run the action once and stop, with the timeout
+being handled by the base executor class.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.executors.retry_executor.RetryExecutor">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.executors.retry_executor.</span></span><span class="sig-name descname"><span class="pre">RetryExecutor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><span class="pre">BaseAction</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">web_element</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">WebElement</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait_to_verify_condition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">30</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.executors.retry_executor.RetryExecutor" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_executor.BaseExecutor" title="selenium_package.interfaces.base_executor.BaseExecutor"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseExecutor</span></code></a></p>
+<p>Executor that retries an action until a condition is met.</p>
+<p>This executor will continuously retry the action until the condition
+to stop is met or the timeout is reached.</p>
+</dd></dl>
+
+</section>
+<section id="retry-executors">
+<h3>Retry Executors<a class="headerlink" href="#retry-executors" title="Link to this heading">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.executors.retry_action_by_max_attempts.RetryActionByMaxAttempts">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.executors.retry_action_by_max_attempts.</span></span><span class="sig-name descname"><span class="pre">RetryActionByMaxAttempts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><span class="pre">BaseAction</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_attempts</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.executors.retry_action_by_max_attempts.RetryActionByMaxAttempts" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_executor.BaseExecutor" title="selenium_package.interfaces.base_executor.BaseExecutor"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseExecutor</span></code></a></p>
+<p>Executor that retries an action a specified number of times.</p>
+<p>This executor will attempt to run the action up to max_attempts times.
+If the action fails after all attempts, it raises MaximumAttemptsReachedException.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="selenium_package.executors.retry_action_by_max_attempts.RetryActionByMaxAttempts.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#selenium_package.executors.retry_action_by_max_attempts.RetryActionByMaxAttempts.run" title="Link to this definition">¶</a></dt>
+<dd><p>Execute the action with retry logic.</p>
+<p>This method will attempt to run the action up to max_attempts times.
+If the action succeeds, it returns the result. If it fails after all
+attempts, it raises MaximumAttemptsReachedException.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>Any: The result of the action if successful</p>
+</dd>
+<dt>Raises:</dt><dd><p>MaximumAttemptsReachedException: If all attempts failed</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="element-based-retry-executors">
+<h3>Element-based Retry Executors<a class="headerlink" href="#element-based-retry-executors" title="Link to this heading">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.executors.retry_action_until_element_is_located.RetryActionUntilElementIsLocated">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.executors.retry_action_until_element_is_located.</span></span><span class="sig-name descname"><span class="pre">RetryActionUntilElementIsLocated</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><span class="pre">BaseAction</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_locator</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait_to_verify_condition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.executors.retry_action_until_element_is_located.RetryActionUntilElementIsLocated" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_executor.BaseExecutor" title="selenium_package.interfaces.base_executor.BaseExecutor"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseExecutor</span></code></a></p>
+<p>Executor that retries an action until an element is located.</p>
+<p>This executor will continuously retry the action until the specified
+element is found on the page using the provided locator.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.executors.retry_action_until_element_has_a_property_value.RetryActionUntilElementHasAPropertyValue">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.executors.retry_action_until_element_has_a_property_value.</span></span><span class="sig-name descname"><span class="pre">RetryActionUntilElementHasAPropertyValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><span class="pre">BaseAction</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">web_element</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">WebElement</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">property_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">property_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait_to_verify_condition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.executors.retry_action_until_element_has_a_property_value.RetryActionUntilElementHasAPropertyValue" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_executor.BaseExecutor" title="selenium_package.interfaces.base_executor.BaseExecutor"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseExecutor</span></code></a></p>
+<p>Executor that retries an action until an element’s property equals a value.</p>
+<p>This executor will continuously retry the action until the specified
+web element’s property exactly matches the expected value.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.executors.retry_action_until_element_contains_a_property_value.RetryActionUntilElementContainsAPropertyValue">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.executors.retry_action_until_element_contains_a_property_value.</span></span><span class="sig-name descname"><span class="pre">RetryActionUntilElementContainsAPropertyValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><span class="pre">BaseAction</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">web_element</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">WebElement</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">property_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">property_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait_to_verify_condition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.executors.retry_action_until_element_contains_a_property_value.RetryActionUntilElementContainsAPropertyValue" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_executor.BaseExecutor" title="selenium_package.interfaces.base_executor.BaseExecutor"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseExecutor</span></code></a></p>
+<p>Executor that retries an action until an element’s property contains a value.</p>
+<p>This executor will continuously retry the action until the specified
+web element’s property contains the expected value.</p>
+</dd></dl>
+
+</section>
+<section id="page-based-retry-executors">
+<h3>Page-based Retry Executors<a class="headerlink" href="#page-based-retry-executors" title="Link to this heading">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.executors.retry_action_until_page_title_is.RetryActionUntilPageTitleIs">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.executors.retry_action_until_page_title_is.</span></span><span class="sig-name descname"><span class="pre">RetryActionUntilPageTitleIs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><span class="pre">BaseAction</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">desired_page_title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait_to_verify_condition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.executors.retry_action_until_page_title_is.RetryActionUntilPageTitleIs" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_executor.BaseExecutor" title="selenium_package.interfaces.base_executor.BaseExecutor"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseExecutor</span></code></a></p>
+<p>Executor that retries an action until the page title exactly matches specific text.</p>
+<p>This executor will continuously retry the action until the current
+page title exactly matches the desired text.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.executors.retry_action_until_page_title_contains.RetryActionUntilPageTitleContains">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.executors.retry_action_until_page_title_contains.</span></span><span class="sig-name descname"><span class="pre">RetryActionUntilPageTitleContains</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><span class="pre">BaseAction</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">desired_page_title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait_to_verify_condition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.executors.retry_action_until_page_title_contains.RetryActionUntilPageTitleContains" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_executor.BaseExecutor" title="selenium_package.interfaces.base_executor.BaseExecutor"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseExecutor</span></code></a></p>
+<p>Executor that retries an action until the page title contains specific text.</p>
+<p>This executor will continuously retry the action until the current
+page title contains the desired text.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.executors.retry_action_until_url_contains.RetryActionUntilUrlContains">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.executors.retry_action_until_url_contains.</span></span><span class="sig-name descname"><span class="pre">RetryActionUntilUrlContains</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><span class="pre">BaseAction</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">desired_url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait_to_verify_condition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.executors.retry_action_until_url_contains.RetryActionUntilUrlContains" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_executor.BaseExecutor" title="selenium_package.interfaces.base_executor.BaseExecutor"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseExecutor</span></code></a></p>
+<p>Executor that retries an action until the URL contains specific text.</p>
+<p>This executor will continuously retry the action until the current
+URL contains the desired text.</p>
+</dd></dl>
+
+</section>
+<section id="tab-based-retry-executors">
+<h3>Tab-based Retry Executors<a class="headerlink" href="#tab-based-retry-executors" title="Link to this heading">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.executors.retry_action_until_another_tab_is_opened.RetryActionUntilAnotherTabIsOpened">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.executors.retry_action_until_another_tab_is_opened.</span></span><span class="sig-name descname"><span class="pre">RetryActionUntilAnotherTabIsOpened</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><span class="pre">BaseAction</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_tabs_count</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait_to_verify_condition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.executors.retry_action_until_another_tab_is_opened.RetryActionUntilAnotherTabIsOpened" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_executor.BaseExecutor" title="selenium_package.interfaces.base_executor.BaseExecutor"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseExecutor</span></code></a></p>
+<p>Executor that retries an action until another tab is opened.</p>
+<p>This executor will continuously retry the action until the number of
+browser tabs increases beyond the initial count.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.executors.retry_action_until_number_of_tabs_is.RetryActionUntilNumberOfTabsIs">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.executors.retry_action_until_number_of_tabs_is.</span></span><span class="sig-name descname"><span class="pre">RetryActionUntilNumberOfTabsIs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><span class="pre">BaseAction</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">desired_number_of_tabs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.executors.retry_action_until_number_of_tabs_is.RetryActionUntilNumberOfTabsIs" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_executor.BaseExecutor" title="selenium_package.interfaces.base_executor.BaseExecutor"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseExecutor</span></code></a></p>
+<p>Executor that retries an action until the number of tabs equals a specific value.</p>
+<p>This executor will continuously retry the action until the browser
+has exactly the desired number of tabs open.</p>
+</dd></dl>
+
+</section>
+<section id="file-based-retry-executors">
+<h3>File-based Retry Executors<a class="headerlink" href="#file-based-retry-executors" title="Link to this heading">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.executors.retry_action_until_new_file_has_been_detected.RetryActionUntilNewFileHasBeenDetected">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.executors.retry_action_until_new_file_has_been_detected.</span></span><span class="sig-name descname"><span class="pre">RetryActionUntilNewFileHasBeenDetected</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><span class="pre">BaseAction</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_extension</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.executors.retry_action_until_new_file_has_been_detected.RetryActionUntilNewFileHasBeenDetected" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_executor.BaseExecutor" title="selenium_package.interfaces.base_executor.BaseExecutor"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseExecutor</span></code></a></p>
+<p>Executor that retries an action until a new file is detected in a directory.</p>
+<p>This executor will continuously retry the action until a new file
+appears in the specified directory.</p>
+</dd></dl>
+
+</section>
+<section id="text-input-retry-executors">
+<h3>Text Input Retry Executors<a class="headerlink" href="#text-input-retry-executors" title="Link to this heading">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="selenium_package.executors.retry_insert_text_until_value_is_correct.RetryInsertTextUntilValueIsCorrect">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">selenium_package.executors.retry_insert_text_until_value_is_correct.</span></span><span class="sig-name descname"><span class="pre">RetryInsertTextUntilValueIsCorrect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_action.BaseAction" title="selenium_package.interfaces.base_action.BaseAction"><span class="pre">BaseAction</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">web_element</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">WebElement</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">desired_text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait_to_verify_condition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#selenium_package.executors.retry_insert_text_until_value_is_correct.RetryInsertTextUntilValueIsCorrect" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="interfaces.html#selenium_package.interfaces.base_executor.BaseExecutor" title="selenium_package.interfaces.base_executor.BaseExecutor"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseExecutor</span></code></a></p>
+<p>Executor that retries an action until an input element contains the correct text.</p>
+<p>This executor will continuously retry the action until the specified
+input element’s value exactly matches the desired text.</p>
+</dd></dl>
+
+</section>
+</section>
+<section id="usage-examples">
+<h2>Usage Examples<a class="headerlink" href="#usage-examples" title="Link to this heading">¶</a></h2>
+<p>Here are some practical examples of how to use the pre-built actions and executors:</p>
+<p><strong>Basic Action Usage:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">selenium_package.actions</span><span class="w"> </span><span class="kn">import</span> <span class="n">ClickOnElement</span><span class="p">,</span> <span class="n">InsertText</span><span class="p">,</span> <span class="n">RedirectToPage</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">selenium.webdriver.common.by</span><span class="w"> </span><span class="kn">import</span> <span class="n">By</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">selenium</span><span class="w"> </span><span class="kn">import</span> <span class="n">webdriver</span>
+
+<span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Chrome</span><span class="p">()</span>
+
+<span class="c1"># Navigate to a page</span>
+<span class="n">redirect_action</span> <span class="o">=</span> <span class="n">RedirectToPage</span><span class="p">(</span><span class="n">driver</span><span class="p">,</span> <span class="s2">&quot;https://example.com&quot;</span><span class="p">)</span>
+<span class="n">redirect_action</span><span class="o">.</span><span class="n">execute_action</span><span class="p">()</span>
+
+<span class="c1"># Find an element and click it</span>
+<span class="n">element</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">ID</span><span class="p">,</span> <span class="s2">&quot;submit-button&quot;</span><span class="p">)</span>
+<span class="n">click_action</span> <span class="o">=</span> <span class="n">ClickOnElement</span><span class="p">(</span><span class="n">driver</span><span class="p">,</span> <span class="n">element</span><span class="p">)</span>
+<span class="n">click_action</span><span class="o">.</span><span class="n">execute_action</span><span class="p">()</span>
+
+<span class="c1"># Insert text into an input field</span>
+<span class="n">input_element</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">NAME</span><span class="p">,</span> <span class="s2">&quot;username&quot;</span><span class="p">)</span>
+<span class="n">insert_action</span> <span class="o">=</span> <span class="n">InsertText</span><span class="p">(</span><span class="n">driver</span><span class="p">,</span> <span class="n">input_element</span><span class="p">,</span> <span class="s2">&quot;myusername&quot;</span><span class="p">)</span>
+<span class="n">insert_action</span><span class="o">.</span><span class="n">execute_action</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>Using Executors for Retry Logic:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">selenium_package.executors</span><span class="w"> </span><span class="kn">import</span> <span class="n">RetryActionUntilElementIsLocated</span><span class="p">,</span> <span class="n">RetryActionByMaxAttempts</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">selenium.webdriver.common.by</span><span class="w"> </span><span class="kn">import</span> <span class="n">By</span>
+
+<span class="c1"># Retry clicking until an element appears</span>
+<span class="n">click_action</span> <span class="o">=</span> <span class="n">ClickOnElement</span><span class="p">(</span><span class="n">driver</span><span class="p">,</span> <span class="n">some_element</span><span class="p">)</span>
+<span class="n">retry_executor</span> <span class="o">=</span> <span class="n">RetryActionUntilElementIsLocated</span><span class="p">(</span>
+    <span class="n">click_action</span><span class="p">,</span>
+    <span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">ID</span><span class="p">,</span> <span class="s2">&quot;success-message&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="n">retry_executor</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+
+<span class="c1"># Retry an action up to 3 times</span>
+<span class="n">retry_max_executor</span> <span class="o">=</span> <span class="n">RetryActionByMaxAttempts</span><span class="p">(</span><span class="n">click_action</span><span class="p">,</span> <span class="n">max_attempts</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">retry_max_executor</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>Combining Actions and Executors:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">selenium_package.executors</span><span class="w"> </span><span class="kn">import</span> <span class="n">RetryActionUntilUrlContains</span>
+
+<span class="c1"># Navigate and wait for URL change</span>
+<span class="n">redirect_action</span> <span class="o">=</span> <span class="n">RedirectToPage</span><span class="p">(</span><span class="n">driver</span><span class="p">,</span> <span class="s2">&quot;https://example.com/login&quot;</span><span class="p">)</span>
+<span class="n">url_retry_executor</span> <span class="o">=</span> <span class="n">RetryActionUntilUrlContains</span><span class="p">(</span><span class="n">redirect_action</span><span class="p">,</span> <span class="s2">&quot;login&quot;</span><span class="p">)</span>
+<span class="n">url_retry_executor</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
 </section>
 </section>
 
@@ -290,8 +589,73 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Pre-built Objects</a><ul>
-<li><a class="reference internal" href="#actions">Actions</a></li>
-<li><a class="reference internal" href="#executors">Executors</a></li>
+<li><a class="reference internal" href="#actions">Actions</a><ul>
+<li><a class="reference internal" href="#click-actions">Click Actions</a><ul>
+<li><a class="reference internal" href="#selenium_package.actions.click_on_element.ClickOnElement"><code class="docutils literal notranslate"><span class="pre">ClickOnElement</span></code></a></li>
+<li><a class="reference internal" href="#selenium_package.actions.click_on_the_screen.ClickOnTheScreen"><code class="docutils literal notranslate"><span class="pre">ClickOnTheScreen</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#text-input-actions">Text Input Actions</a><ul>
+<li><a class="reference internal" href="#selenium_package.actions.insert_text.InsertText"><code class="docutils literal notranslate"><span class="pre">InsertText</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#navigation-actions">Navigation Actions</a><ul>
+<li><a class="reference internal" href="#selenium_package.actions.redirect_to_page.RedirectToPage"><code class="docutils literal notranslate"><span class="pre">RedirectToPage</span></code></a></li>
+<li><a class="reference internal" href="#selenium_package.actions.go_back_to_the_previous_page.GoBackToThePreviousPage"><code class="docutils literal notranslate"><span class="pre">GoBackToThePreviousPage</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tab-management-actions">Tab Management Actions</a><ul>
+<li><a class="reference internal" href="#selenium_package.actions.go_to_tab_that_has_title.GoToTabThatHasTitle"><code class="docutils literal notranslate"><span class="pre">GoToTabThatHasTitle</span></code></a></li>
+<li><a class="reference internal" href="#selenium_package.actions.go_to_tab_that_contains_title.GoToTabThatContainsTitle"><code class="docutils literal notranslate"><span class="pre">GoToTabThatContainsTitle</span></code></a></li>
+<li><a class="reference internal" href="#selenium_package.actions.go_to_tab_that_contains_url.GoToTabThatContainsUrl"><code class="docutils literal notranslate"><span class="pre">GoToTabThatContainsUrl</span></code></a></li>
+<li><a class="reference internal" href="#selenium_package.actions.close_all_tabs_except_that_has_title.CloseAllTabsExceptThatHasTitle"><code class="docutils literal notranslate"><span class="pre">CloseAllTabsExceptThatHasTitle</span></code></a></li>
+<li><a class="reference internal" href="#selenium_package.actions.close_all_tabs_except_that_contains_title.CloseAllTabsExceptThatContainsTitle"><code class="docutils literal notranslate"><span class="pre">CloseAllTabsExceptThatContainsTitle</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#executors">Executors</a><ul>
+<li><a class="reference internal" href="#basic-executors">Basic Executors</a><ul>
+<li><a class="reference internal" href="#selenium_package.executors.default_executor.DefaultExecutor"><code class="docutils literal notranslate"><span class="pre">DefaultExecutor</span></code></a></li>
+<li><a class="reference internal" href="#selenium_package.executors.timeout_executor.TimeoutExecutor"><code class="docutils literal notranslate"><span class="pre">TimeoutExecutor</span></code></a></li>
+<li><a class="reference internal" href="#selenium_package.executors.retry_executor.RetryExecutor"><code class="docutils literal notranslate"><span class="pre">RetryExecutor</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#retry-executors">Retry Executors</a><ul>
+<li><a class="reference internal" href="#selenium_package.executors.retry_action_by_max_attempts.RetryActionByMaxAttempts"><code class="docutils literal notranslate"><span class="pre">RetryActionByMaxAttempts</span></code></a><ul>
+<li><a class="reference internal" href="#selenium_package.executors.retry_action_by_max_attempts.RetryActionByMaxAttempts.run"><code class="docutils literal notranslate"><span class="pre">RetryActionByMaxAttempts.run()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#element-based-retry-executors">Element-based Retry Executors</a><ul>
+<li><a class="reference internal" href="#selenium_package.executors.retry_action_until_element_is_located.RetryActionUntilElementIsLocated"><code class="docutils literal notranslate"><span class="pre">RetryActionUntilElementIsLocated</span></code></a></li>
+<li><a class="reference internal" href="#selenium_package.executors.retry_action_until_element_has_a_property_value.RetryActionUntilElementHasAPropertyValue"><code class="docutils literal notranslate"><span class="pre">RetryActionUntilElementHasAPropertyValue</span></code></a></li>
+<li><a class="reference internal" href="#selenium_package.executors.retry_action_until_element_contains_a_property_value.RetryActionUntilElementContainsAPropertyValue"><code class="docutils literal notranslate"><span class="pre">RetryActionUntilElementContainsAPropertyValue</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#page-based-retry-executors">Page-based Retry Executors</a><ul>
+<li><a class="reference internal" href="#selenium_package.executors.retry_action_until_page_title_is.RetryActionUntilPageTitleIs"><code class="docutils literal notranslate"><span class="pre">RetryActionUntilPageTitleIs</span></code></a></li>
+<li><a class="reference internal" href="#selenium_package.executors.retry_action_until_page_title_contains.RetryActionUntilPageTitleContains"><code class="docutils literal notranslate"><span class="pre">RetryActionUntilPageTitleContains</span></code></a></li>
+<li><a class="reference internal" href="#selenium_package.executors.retry_action_until_url_contains.RetryActionUntilUrlContains"><code class="docutils literal notranslate"><span class="pre">RetryActionUntilUrlContains</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tab-based-retry-executors">Tab-based Retry Executors</a><ul>
+<li><a class="reference internal" href="#selenium_package.executors.retry_action_until_another_tab_is_opened.RetryActionUntilAnotherTabIsOpened"><code class="docutils literal notranslate"><span class="pre">RetryActionUntilAnotherTabIsOpened</span></code></a></li>
+<li><a class="reference internal" href="#selenium_package.executors.retry_action_until_number_of_tabs_is.RetryActionUntilNumberOfTabsIs"><code class="docutils literal notranslate"><span class="pre">RetryActionUntilNumberOfTabsIs</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#file-based-retry-executors">File-based Retry Executors</a><ul>
+<li><a class="reference internal" href="#selenium_package.executors.retry_action_until_new_file_has_been_detected.RetryActionUntilNewFileHasBeenDetected"><code class="docutils literal notranslate"><span class="pre">RetryActionUntilNewFileHasBeenDetected</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#text-input-retry-executors">Text Input Retry Executors</a><ul>
+<li><a class="reference internal" href="#selenium_package.executors.retry_insert_text_until_value_is_correct.RetryInsertTextUntilValueIsCorrect"><code class="docutils literal notranslate"><span class="pre">RetryInsertTextUntilValueIsCorrect</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#usage-examples">Usage Examples</a></li>
 </ul>
 </li>
 </ul>
